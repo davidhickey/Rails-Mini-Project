@@ -1,3 +1,43 @@
 // Place all the styles related to the articles controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+body {
+  font-family: monospace;
+  background-image: url("https://jeanniewilliamsphotography.files.wordpress.com/2010/11/central-park-black-and-white.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30em;
+}
+h1 {
+  // text-align: center;
+}
+
+ul#Articles {
+  // text-align: center;
+  padding-left: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+li {
+  // text-align: center;
+  list-style-type: none;
+  padding-left: 0;
+}
+
+div.NewPoem {
+  // text-align: center;
+}
+
+div.transbox {
+  width: 40em;
+  background-color: #ffffff;
+  border: 1px solid black;
+  opacity: 0.8;
+  border-radius: 15px;
+}
