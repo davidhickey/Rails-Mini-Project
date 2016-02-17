@@ -5,6 +5,12 @@
 
 
 body {
+  background: url("https://upload.wikimedia.org/wikipedia/commons/b/b9/Caspar_David_Friedrich_-_Wanderer_above_the_sea_of_fog.jpg");
+  background-size: 100%;
+  background-repeat:repeat;;
+  background-attachment: fixed;
+  background-position: center;
+  height: 100%;
   font-family: monospace;
   text-align: center;
   margin-left: auto;
@@ -34,9 +40,13 @@ div.NewPoem {
 }
 
 div.transbox {
+  position: fixed;
+  top: 35%;
+  left: 25%;
   width: 40em;
   background-color: #ffffff;
   border: 1px solid black;
   opacity: 0.8;
   border-radius: 15px;
+
 }
