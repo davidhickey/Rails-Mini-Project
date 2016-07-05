@@ -2,15 +2,33 @@
 <html>
 <head>
   <title>Poemetry</title>
+  <link href='https://fonts.googleapis.com/css?family=El+Messiri' rel='stylesheet' type='text/css'>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
 </head>
-<body>
+<div class="container">
+  <nav class="navbar navbar-default navbar-fixed-top">
+
+        <ul class="nav navbar-nav">
+          <li>
+            <%= link_to "Home", root_path %>
+          <li>
+            <%= link_to "Write a New Poem", new_article_path, class: "new_article" %>
+          </li>
+          <li>
+            <%= link_to "Past Poems", articles_path %>
+          </li>
+        </ul>
+    </nav>
 
 <p class="flash"><%= flash.notice %></p>
 
+<body>
 <%= yield %>
-
 </body>
+
+</div>
 </html>

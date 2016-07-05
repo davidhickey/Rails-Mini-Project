@@ -1,10 +1,16 @@
-<div class="transbox">
+<div class = "row">
 <h1><%= @article.title %></h1>
-<p><%= @article.body %></p>
+<p style="white-space: pre-line"><%= @article.body %></p>
+</div>
+<div class ="row">
 <h3>Comments(<%= @article.comments.size %>)</h3>
 <%= render partial: 'articles/comment', collection: @article.comments %>
+</div>
+<div class ="row">
 <%= render partial: 'comments/form' %>
+</div>
+<div class="row">
 <%= link_to "<< Back to Articles List", articles_path %>
-<%= link_to "delete", article_path(@article), method: :delete, data: {confirm: "Do you actually want to delete this?"} %>
+<!-- <%= link_to "delete", article_path(@article), method: :delete, data: {confirm: "Do you actually want to delete this?"} %> -->
 <%= link_to "edit", edit_article_path(@article) %>
 </div>

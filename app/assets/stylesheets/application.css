@@ -14,11 +14,28 @@
  *= require_self
 */
 
+.container {
+  position: absolute;
+  font-family: 'El Messiri', sans-serif;
+}
+
+.navbar {
+  opacity: .5;
+  position: inherit;
+}
+
+.row {
+  position: relative;
+}
+
+
 body {
-  background: url("https://upload.wikimedia.org/wikipedia/commons/b/b9/Caspar_David_Friedrich_-_Wanderer_above_the_sea_of_fog.jpg");
-  background-size: 100%;
-  background-repeat:repeat;;
-  background-attachment: fixed;
-  background-position: center;
+  top: 20%;
+  position: absolute;
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/b/b9/Caspar_David_Friedrich_-_Wanderer_above_the_sea_of_fog.jpg");
+  background-repeat: no-repeat;
   height: 100%;
+  width: 100%;
+  background-size: cover;
+  font-family: 'El Messiri', sans-serif;
 }

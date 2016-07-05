@@ -1,9 +1,5 @@
-<body>
-<div class="transbox">
-  <h1>Write a Poem!</h1>
-  <h4>"Poetry is when an emotion has found its thought and the thought has found words" - Robert Frost</h4>
-
-
+<div class ="row">
+  <h1>Past Poems</h1>
 <h4>
 <ul id="Articles">
   <% @articles.each do |article| %>
@@ -13,11 +9,4 @@
   <% end %>
 </ul>
 <h4>
-
-<h3>
-<div class="NewPoem">
-<%= link_to "Write a New Poem", new_article_path, class: "new_article" %>
 </div>
-<h3>
-</div>
-</body>

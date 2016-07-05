@@ -1,18 +1,18 @@
+<div class="row">
 <%= form_for(@article) do |f| %>
   <ul>
   <% @article.errors.full_messages.each do |error| %>
     <li><%= error %></li>
     <% end %>
   </ul>
-  <p>
     <%= f.label :title %> <br />
     <%= f.text_field :title %>
-  </p>
-  <p>
+  </div>
+  <div class="row">
     <%= f.label :body %><br />
     <%= f.text_area :body, :class => 'typeArea' %>
-  </p>
-  <p>
-    <%= f.submit %>
-  </p>
+</div>
+<div class="row">
+    <%= f.submit "Add Poem!" %>
   <% end %>
+</div>
