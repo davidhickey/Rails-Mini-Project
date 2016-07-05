@@ -22,11 +22,15 @@
 .navbar {
   opacity: .5;
   position: inherit;
+  left: 5%;
+  text-align: center;
 }
 
 .row {
   position: relative;
+  text-align: left;
 }
+
 
 
 body {
@@ -38,4 +42,14 @@ body {
   width: 100%;
   background-size: cover;
   font-family: 'El Messiri', sans-serif;
+  left: 5%;
+}
+
+.home {
+  position: relative;
+  text-align: left;
+}
+
+li {
+  list-style-type: none;
 }
