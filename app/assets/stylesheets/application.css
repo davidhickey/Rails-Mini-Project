@@ -14,7 +14,7 @@
  *= require_self
 */
 
-.container {
+.container-fluid {
   position: absolute;
   font-family: 'El Messiri', sans-serif;
 
@@ -45,7 +45,6 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position:top;
-  background-repeat: repeat-y;
 }
 
 
@@ -56,9 +55,28 @@ body {
 
 li {
   list-style-type: none;
+  z-index: 2;
+  color: black;
 }
 
 
 a {
   color: black !important;
+}
+
+@media (max-width: 700px){
+
+body {
+  top: 20%;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  font-family: 'El Messiri', sans-serif;
+  left: 5%;
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/b/b9/Caspar_David_Friedrich_-_Wanderer_above_the_sea_of_fog.jpg");
+  background-size: initial;
+
+}
+
+
 }
